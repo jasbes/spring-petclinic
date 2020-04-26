@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * @author jsilva on 27/04/2020
  */
-@RequestMapping("/vets")
+@RequestMapping("/owners")
 @Controller
-public class VetsController {
+public class OwnerController {
 
     @GetMapping(value = {"", "index", "index.html"})
     public String index() {
-        return "vets/index";
+        return "owners/index";
     }
 }
